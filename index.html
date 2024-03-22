@@ -2,37 +2,32 @@
 <html>
     <head>
         <title>Wendy's Outstanding Website</title>
-        <style type="text/css">
+        <style>
             body {
                 background: rgb(125, 198, 205);
                 color: rgb(45, 45, 45);
                 padding: 10px;
                 font-family: arial;
             }
-            header {
-                font-size: 1.5em;
-                font-weight: bold;
-            }
-            h1 {
-                margin: 10px;
-            }
             #all-contents {
                 max-width: 800px;
                 margin: auto;
             }
-    
+        
             /* navigation menu */
             nav {
-                background: rgb(239, 80, 41);
+                background: rgb(248, 131, 121);
                 margin: 0 auto;
+                margin-bottom: 20px;
                 display: flex;
                 padding: 10px;
             }
-            nav header {
+            nav h1 {
                 display: flex;
                 align-items: center;
-                color: rgb(255, 255, 255);
+                color: white;
                 flex: 1;
+                margin: 0;
             }
             nav ul {
                 list-style-image: none;
@@ -45,60 +40,65 @@
                 text-decoration: none;
                 color: #fff;
             }
-    
+        
             /* main container area beneath menu */
             main {
                 background: rgb(245, 238, 219);
                 display: flex;
             }
+            .sidebar {
+                margin-right: 25px;
+                padding: 10px;
+            }
+            .sidebar img {
+                width: 200px;
+            }
             .content {
                 flex: 1;
                 padding: 15px;
             }
-             /* portfolio styles */
-             #portfolio {
-                list-style-type: none;
-                padding-left: 0;
-            }
-            
-            #portfolio li {
-                background: #fff;
-                padding: 10px;
-                border-radius: 10px;
-                margin-bottom: 10px;
-            }
-            
-            #portfolio li:hover {
-                background: #eee;
-            } 
-            
-            #portfolio a {
-                text-decoration: none;
-                color: #454545;
+            h2, h3 {
+                margin: 0px;
             }
         </style>
     </head>
-
+    
     <body>
-      <div id="all-contents">
-        <nav>
-            <h1>Wendy's Outstanding Website</h1>
-            <ul>
-               <li>
-                 <a href="index.html"> Home </a>
-               </li>
-               <li>
-                 <a href="portfolio.html"> Portfolio </a>
-               </li>
-            </ul>
-         </nav>
-         <main>
-            <div class="content">
-                <h1>Portfolio</h1>
-                <ul id="portfolio">
-                </ul>
-            </div>
-        </main>
-      </div>
+        <div id="all-contents"> 
+            <nav>
+               <h1>Wendy's Outstanding Website</h1>
+               <ul>
+                  <li>
+                    <a href="index.html"> Home </a>
+                  </li>
+                  <li>
+                    <a href="portfolio.html"> Portfolio </a>
+                  </li>
+               </ul>
+            </nav>
+    
+            <main>
+                <div class="sidebar">
+                    <img src="https://media.architecturaldigest.com/photos/62fab98fbd494a7bbf81420d/16:9/w_1327,h_746,c_limit/LisaBreeze%20Flemington%20House%2013.jpeg"
+                    width="300"
+                    height="250"
+                    border-style="dotted solid dashed double"
+                    >
+                </div>
+            
+                <div class="content">
+                    <h2> Wendy Veronie</h2>
+                    <p> Teacher at Voxy</p>
+                    <div class="interests"> 
+                        <h3>Interests</h3>
+                          <ul>
+                            <li>Travel</li>
+                            <li>Music</li>
+                            <li>Cats</li>
+                          </ul>
+                    </div>
+                </div>
+            </main>
+        </div>
     </body>
 </html>
